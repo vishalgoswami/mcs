@@ -31,7 +31,8 @@ public class InvokerController {
         for (String uri : uris) {
             LOGGER.info(String.format("Invoking URL = %s", uri));
             String result = restTemplate.getForObject(uri, String.class);
-            LOGGER.info(String.format("Response = %s", result));
+
+        LOGGER.info(String.format("Response = %s", result));
         }
 
 
